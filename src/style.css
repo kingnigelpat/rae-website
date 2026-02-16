@@ -46,12 +46,12 @@ body {
 .nav-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .logo {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 0.5rem;
     font-weight: 700;
     font-size: 1.5rem;
@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
     padding-top: 80px;
     position: relative;
@@ -410,4 +410,50 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* Support Section */
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+.support-item {
+    padding: 2rem;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.support-item h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.support-action {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        max-width: 1000px;
+    }
+}
+
+.support-action-internal {
+    margin-top: 2rem;
+    text-align: center;
 }
