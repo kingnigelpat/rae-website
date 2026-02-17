@@ -3,13 +3,19 @@ import './style.css'
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+
+        // Prevent default for anchor links
         e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+        // Only scroll if href is a valid ID selector (starts with # and has length > 1)
+        if (href && href.startsWith('#') && href.length > 1) {
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });
