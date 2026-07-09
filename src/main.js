@@ -54,6 +54,20 @@ document.querySelectorAll('.product-card, .feature-item, .section-header').forEa
     observer.observe(el);
 });
 
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    navToggle.classList.toggle('active');
+});
+
+window.closeNav = function () {
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('active');
+};
+
 // Add animation class helper
 document.head.insertAdjacentHTML('beforeend', `
 <style>

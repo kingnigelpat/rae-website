@@ -31,13 +31,16 @@
             <img src="/RAE-removebg-preview.png" alt="Rae" class="logo-img" />
             <span>Rae</span>
         </a>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#how">How It Works</a>
-            <a href="#contact">Contact</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#products" onclick="closeNav()">Products</a>
+            <a href="#how" onclick="closeNav()">How It Works</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
-        <a href="#products" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="#products" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </nav>
 
