@@ -1,25 +1,25 @@
 /* ===== Rae Website — White/Black/Gold Theme ===== */
 
 :root {
-  --bg: #ffffff;
-  --bg-alt: #f8f8f8;
-  --bg-card: #ffffff;
-  --bg-elevated: #f2f2f2;
-  --text: #0a0a0a;
-  --text-secondary: #555555;
-  --text-tertiary: #999999;
+  --bg: #000000;
+  --bg-alt: #0a0a0a;
+  --bg-card: #111111;
+  --bg-elevated: #1a1a1a;
+  --text: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-tertiary: #666666;
   --accent: #D4A843;
   --accent-light: #f0d68a;
   --accent-dark: #b8922e;
   --accent-glow: rgba(212, 168, 67, 0.2);
-  --border: #e5e5e5;
-  --border-light: #f0f0f0;
+  --border: #222222;
+  --border-light: #1a1a1a;
   --font: 'Inter', system-ui, -apple-system, sans-serif;
   --radius: 14px;
   --radius-sm: 8px;
-  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md: 0 4px 20px rgba(0,0,0,0.06);
-  --shadow-lg: 0 10px 40px rgba(0,0,0,0.08);
+  --shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
   --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -96,15 +96,15 @@ body.loaded { opacity: 1; }
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   padding: 1rem 0;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-light);
   transition: background var(--transition), box-shadow var(--transition);
 }
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.3);
 }
 
 .nav-content { display: flex; justify-content: space-between; align-items: center; }
@@ -158,7 +158,7 @@ body.loaded { opacity: 1; }
 .hero {
   min-height: 90vh; display: flex; align-items: center; justify-content: center;
   text-align: center; padding-top: 80px; position: relative; overflow: hidden;
-  background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+  background: linear-gradient(180deg, #050505 0%, #000 100%);
 }
 
 .hero-bg {
