@@ -1,5 +1,3 @@
-import './style.css'
-
 // ===== 1. Preloader: Hide when page is ready =====
 window.addEventListener('load', () => {
   const skeleton = document.getElementById('skeletonLoader');

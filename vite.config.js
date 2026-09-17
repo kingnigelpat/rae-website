@@ -1,7 +1,7 @@
 export default {
     root: './',
     publicDir: 'public',
-    base: '/rae-website/',
+    base: './',
     build: {
         outDir: 'dist',
     }
